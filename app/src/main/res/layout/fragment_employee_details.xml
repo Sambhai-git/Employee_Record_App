@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <ImageView
+            android:id="@+id/employeeimage"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+
+            <TextView
+                android:id="@+id/textName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="@string/name"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textDesignation"
+                style="@style/EmployeeDetailsTextView"
+                android:layout_width="wrap_content"
+                android:layout_below="@id/textName"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="8dp"
+                android:gravity="center"
+                android:text="@string/designation"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textPhone"
+                style="@style/EmployeeDetailsTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textDesignation"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="8dp"
+                android:gravity="center"
+                android:text="@string/phone_number"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textEmail"
+                style="@style/EmployeeDetailsTextView"
+                android:layout_width="wrap_content"
+                android:layout_below="@id/textPhone"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="8dp"
+                android:gravity="center"
+                android:text="@string/email_id"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textTokenID"
+                style="@style/EmployeeDetailsTextView"
+                android:layout_width="wrap_content"
+                android:layout_below="@id/textEmail"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="8dp"
+                android:gravity="center"
+                android:text="@string/token_id"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textBloodGroup"
+                style="@style/EmployeeDetailsTextView"
+                android:layout_width="wrap_content"
+                android:layout_below="@id/textTokenID"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="8dp"
+                android:gravity="center"
+                android:text="@string/blood_group"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textDOB"
+                style="@style/EmployeeDetailsTextView"
+                android:layout_width="wrap_content"
+                android:layout_below="@id/textBloodGroup"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="8dp"
+                android:gravity="center"
+                android:text="@string/dob"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textCity"
+                style="@style/EmployeeDetailsTextView"
+                android:layout_width="wrap_content"
+                android:layout_below="@id/textDOB"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="8dp"
+                android:gravity="center"
+                android:text="@string/city"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/joiningDate"
+                style="@style/EmployeeDetailsTextView"
+                android:layout_width="wrap_content"
+                android:layout_below="@id/textCity"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="8dp"
+                android:gravity="center"
+                android:text="@string/doj"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/addedBy"
+                style="@style/EmployeeDetailsTextView"
+                android:layout_width="wrap_content"
+                android:layout_below="@id/joiningDate"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="8dp"
+                android:gravity="center"
+                android:text="@string/added_by"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/modifiedBy"
+                style="@style/EmployeeDetailsTextView"
+                android:layout_width="wrap_content"
+                android:layout_below="@id/addedBy"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="8dp"
+                android:gravity="center"
+                android:text="@string/last_modified_by"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/closeBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/close" />
+    </LinearLayout>
+
+</layout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="Sort_options">
+        <item>Sort by Name</item>
+        <item>Sort by Age</item>
+        <!-- Add more sorting options if needed -->
+    </array>
+</resources>

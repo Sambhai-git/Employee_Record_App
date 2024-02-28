@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/registraionFragment"
+        android:name="com.example.employeerecordapp.fragments.add.UserRegistrationFragment"
+        android:label="fragment_registraion"
+        tools:layout="@layout/fragment_user_registraion" />
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.employeerecordapp.fragments.Login.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_loginFragment_to_userLogin"
+            app:destination="@id/userLogin" />
+        <action
+            android:id="@+id/action_loginFragment_to_adminLogin4"
+            app:destination="@id/adminLogin" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/employeeAddFragment"
+        android:name="com.example.employeerecordapp.fragments.add.EmployeeAddFragment"
+        android:label="fragment_employee_add"
+        tools:layout="@layout/fragment_employee_add" />
+
+    <fragment
+        android:id="@+id/RecordlistFragment"
+        android:name="com.example.employeerecordapp.fragments.homepage.EmployeeMenu"
+        android:label="fragment_list"
+        tools:layout="@layout/fragment_list_record">
+        <action
+            android:id="@+id/action_RecordlistFragment_to_employeeAddFragment"
+            app:destination="@id/employeeAddFragment" />
+        <action
+            android:id="@+id/action_RecordlistFragment_to_updateFragment"
+            app:destination="@id/updateFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/updateFragment"
+        android:name="com.example.employeerecordapp.fragments.update.UpdateEmployee"
+        android:label="fragment_update"
+        tools:layout="@layout/fragment_update_record" />
+
+    <fragment
+        android:id="@+id/updateUser"
+        android:name="com.example.employeerecordapp.fragments.update.UpdateUser"
+        android:label="fragment_update_user"
+        tools:layout="@layout/fragment_update_user" />
+
+    <fragment
+        android:id="@+id/adminLogin"
+        android:name="com.example.employeerecordapp.fragments.Login.AdminLogin"
+        android:label="fragment_admin_login"
+        tools:layout="@layout/fragment_admin_login" />
+
+    <fragment
+        android:id="@+id/adminMenu"
+        android:name="com.example.employeerecordapp.fragments.homepage.AdminMenu"
+        android:label="fragment_admin_menu"
+        tools:layout="@layout/fragment_admin_menu">
+
+        <action
+            android:id="@+id/action_adminMenu_to_registraionFragment"
+            app:destination="@id/registraionFragment" />
+        <action
+            android:id="@+id/action_adminMenu_to_updateUser"
+            app:destination="@id/updateUser" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/userLogin"
+        android:name="com.example.employeerecordapp.fragments.Login.UserLogin"
+        android:label="fragment_user_login"
+        tools:layout="@layout/fragment_user_login" />
+</navigation>

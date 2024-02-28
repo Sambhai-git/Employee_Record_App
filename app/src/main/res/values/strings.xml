@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">Employee Record App</string>
+    <string name="select_blood_group">Select Blood Group</string>
+    <string name="new_user_register_here">New User??Register Here</string>
+    <string name="designation">Designation</string>
+    <string-array name="blood_groups">
+        <item>Select Blood Group</item>
+        <item>A+</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B-</item>
+        <item>O+</item>
+        <item>O-</item>
+        <item>AB+</item>
+        <item>AB-</item>
+    </string-array>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome!"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="login_as_admin">Login as Admin</string>
+    <string name="login_as_user">Login as User</string>
+    <string name="token_id">Token ID</string>
+    <string name="employee_record_management_app">Employee Record Management App</string>
+    <string name="welcome_admin">Welcome Admin</string>
+    <string name="welcome_user">Welcome User</string>
+    <string name="sign">Sign</string>
+    <string name="sign_in">Sign In</string>
+    <string name="enter_username">Enter Username</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="email_id">Email ID</string>
+    <string name="name">Name</string>
+    <string name="username">UserName</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="register">Register</string>
+    <string name="update">Update</string>
+    <string name="enter_new_password">Enter New Password</string>
+    <string name="confirm_new_password">Confirm New Password</string>
+    <string name="error_min_character_count">Minimum character count: %d</string>
+    <string name="error_invalid_email">Invalid email address</string>
+    <string name="error_email_not_unique">Email address already in use</string>
+    <string name="error_passwords_do_not_match">Passwords do not match</string>
+    <string name="error_user_name_unique">User Name not unique</string>
+    <string name="error_not_unique">UserName Already in use</string>
+    <string name="username_">UserName</string>
+    <string name="user_id">User Id</string>
+    <string name="_1">1</string>
+    <string name="position">%d</string>
+    <string name="add_record">Add Record</string>
+    <string name="employee_card_details">Employee card details</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="blood_group">Blood Group</string>
+    <string name="dob">DOB</string>
+    <string name="city">City</string>
+    <string name="doj">DOJ</string>
+    <string name="added_by">Added By :</string>
+    <string name="last_modified_by">Last modified By :</string>
+    <string name="close">Close</string>
+
+</resources>

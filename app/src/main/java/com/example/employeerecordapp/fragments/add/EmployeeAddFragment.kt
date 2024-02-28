@@ -234,6 +234,7 @@ class EmployeeAddFragment : Fragment() {
                 }
             }
 
+
             // Check if phone number already exists in the database and show warning if found
             lifecycleScope.launch {
                 if (mobile.isNotBlank() && mainViewModel.isPhoneNoExists(mobile.toLong())) {
